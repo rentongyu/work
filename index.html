@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>购物网</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container ct-myNavbar">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">让购物更简单</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar-dh">
+				<ul class="nav navbar-nav">
+					<li><a href="#">你好，请登录</a></li>
+					<li><a href="#">免费注册</a></li>
+					<li><a href="#">消息</a></li>
+					<li><a href="#">个人中心</a></li>
+					<li><a href="#">联系客服</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container ct-myNavbar-fl" id="mb-myNavbar">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#">Menu</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="logoimg">
+	                <a href="#"><img src="pic/logo.png" ></a>
+	            </div>
+			</div>
+				<div class="col-sm-8 col-md-offset-1 search">
+					<div class="search-box">
+						<input type="text" id="search-box-i" value="" />
+						<button class="search-box-text" type="submit">搜索</button>
+						<div class="searchfillblock">
+							
+						</div>
+					</div>
+	          </div>
+		</div>
+	</div>
+	<div class="container">
+		<div id="menubarbox">
+			<div class="row hd-list-box">
+				<div onmouseenter="bars()" class="hd-list bar-border"><a href="#">首页</a></div>
+				<div onmouseenter="barl()" class="hd-list bar-border"><a href="#">热卖</a></div>
+				<div onmouseenter="barg()" class="hd-list bar-border"><a href="#">好物</a></div>
+				<div onmouseenter="barz()" class="hd-list bar-border"><a href="#">抢购</a></div>
+				<div onmouseenter="barm()" class="hd-list"><a href="#">更多</a></div>
+			</div>
+			<div class="menubarhide">
+				<p id="menubartiptext">默认</p>
+			</div>
+		</div>
+	</div>
+	<script src="./js/menubar.js"></script>
+	<div class="container content-box content-box-img">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="navigation">
+					<div class="category">
+						<div class="categoryitem"><p>女鞋 / 男鞋 / 箱包</p></div>
+						<div class="categoryitem"><p>母婴 / 童装 / 玩具</p></div>
+						<div class="categoryitem"><p>美妆 / 彩妆 / 个护</p></div>
+						<div class="categoryitem"><p>手机 / 数码 / 企业</p></div>
+						<div class="categoryitem"><p>零食 / 生鲜 / 茶酒</p></div>
+						<div class="categoryitem"><p>厨具 / 收纳 / 清洁</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 show-img-box">
+				<div class="show-img">
+					<div class="ppt-container" style="left: -555px;">
+						<img src="./pic/e.jpg" alt="">
+						<img src="./pic/a.jpg" alt="">
+						<img src="./pic/b.jpg" alt="">
+						<img src="./pic/c.jpg" alt="">
+						<img src="./pic/d.jpg" alt="">
+						<img src="./pic/e.jpg" alt="">
+						<img src="./pic/a.jpg" alt="">
+					</div>
+					<a href="javascript:;" class="arrow arrow_left">&lt;</a>
+					<a href="javascript:;" class="arrow arrow_right">&gt;</a>
+			  </div>
+				<script src="js/showimg.js"></script>
+			</div>
+			<div class="col-sm-3">
+				<div class="show-img show-img-two">
+					<div id="showmall" class="showmall show-mall-one">
+						<div onmouseenter="showmalljoin1()" onmouseleave="showmallput1()" class="showmalltext">
+							<div id="show1" class="showmalltextbefore">
+								<p>曲奇饼干</p>
+								<p>￥<span>9.90</span></p>
+							</div>
+							<div id="ashow1" class="showmalltextafter">
+								<p>曲奇饼干</p>
+								<p>整箱网红零食</p>
+								<p>香草夹心散装多口味</p>
+							</div>
+						</div>
+					</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+				<div class="show-img show-img-two">
+					<div id="showmall2" class="showmall show-mall-two">
+						<div onmouseenter="showmalljoin2()" onmouseleave="showmallput2()" class="showmalltext">
+							<div id="show2" class="showmalltextbefore">
+								<p>坚果</p>
+								<p>￥<span>139</span></p>
+							</div>
+							<div id="ashow2" class="showmalltextafter">
+								<p>沃隆坚果</p>
+								<p>混合坚果礼盒</p>
+								<p>营养零食礼包525g</p>
+							</div>
+						</div>
+					</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+				<div class="show-img show-img-two">
+					<div id="showmall3" class="showmall show-mall-three">
+						<div onmouseenter="showmalljoin3()" onmouseleave="showmallput3()" class="showmalltext">
+							<div id="show3" class="showmalltextbefore">
+								<p>酱鸭舌头</p>
+								<p>￥<span>160</span></p>
+							</div>
+							<div id="ashow3" class="showmalltextafter">
+								<p>初旭鸭舌</p>
+								<p>鸭肉小吃零食</p>
+								<p>初旭酱鸭舌头原味480g</p>
+							</div>
+						</div>
+					</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+				<div class="show-img show-img-two">
+					<div id="showmall4" class="showmall show-mall-four">
+						<div onmouseenter="showmalljoin4()" onmouseleave="showmallput4()" class="showmalltext">
+							<div id="show4" class="showmalltextbefore">
+								<p>肉松饼</p>
+								<p>￥<span>44.80</span></p>
+							</div>
+							<div id="ashow4" class="showmalltextafter">
+								<p>正宗肉松饼</p>
+								<p>充饥夜宵特产糕点</p>
+								<p>美食营养食品面包</p>
+							</div>
+						</div>
+					</div>
+			  </div>
+			</div>
+			<div class="col-sm-3">
+				<div class="show-img show-img-two">
+					<div id="showmall5" class="showmall show-mall-five">
+						<div onmouseenter="showmalljoin5()" onmouseleave="showmallput5()" class="showmalltext">
+							<div id="show5" class="showmalltextbefore">
+								<p>瓜子</p>
+								<p>￥<span>39.90</span></p>
+							</div>
+							<div id="ashow5" class="showmalltextafter">
+								<p>瓜子</p>
+								<p>焦糖/山核桃味瓜子500g*4袋</p>
+								<p>焦糖瓜子引领者 水煮工艺</p>
+							</div>
+						</div>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script src="js/showmall.js"></script>
+	<div class="container service">
+		<h3>特色好物</h3>
+	</div>
+	<div class="container content-box">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="commodity-show">
+			      <div class="cm-s-1">
+			      	<div class="icon">
+			      		<img src="pic/wifi.png" >
+			      	</div>
+							<div class="conttext">
+								<p>限时秒杀</p>
+								<b class="spike"><span>距结束 &nbsp;</span><span id="spikeTime">00:00:00</span> </b>
+							</div>
+			      </div>
+						<div class="cm-s-2">
+							<div class="city">大牌闪购</div>
+							<div class="city">品类秒杀</div>
+							<div class="city">每日特价</div>
+						</div>
+			  </div>
+			</div>
+			<div class="col-md-4">
+				<div class="commodity-show">
+			    <div class="cm-s-1">
+			    	<div class="icon">
+			    		<img src="pic/qz.png" >
+			    	</div>
+			    	<div class="conttext">
+			    		<p>新手上路</p>
+			    		<p>全额退款<br>服务优质，方便快捷，诚信可靠 24小时在线帮助</p>
+			    	</div>
+			    </div>
+			    <div class="cm-s-2">
+						<div class="city">新手专区</div>
+						<div class="city">消费警示</div>
+						<div class="city">交易安全</div>
+			    </div>
+			  </div>
+			</div>
+			<div class="col-md-4">
+				<div class="commodity-show">
+			    <div class="cm-s-1">
+			    	<div class="icon">
+			    		<img src="pic/bx.png" >
+			    	</div>
+			    	<div class="conttext">
+			    		<p>消费者保障</p>
+			    		<p>保险，安心随行<br>保障范围 退货退款流程</p>
+			    	</div>
+			    </div>
+			    <div class="cm-s-2">
+						<div class="city">【服务中心】</div>
+						<div class="city">【更多】</div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<script src="./js/spike.js"></script>
+	</div>
+	<nav class="mb-list navbar-fixed-bottom">
+		<div class="item">首页</div>
+		<div class="item">攻略</div>
+		<div class="item">分享</div>
+		<div class="item">个人中心</div>
+	</nav>
+	<div class="jumbotron text-center footer">
+		<p>Copyright©1999-2020, All rights reserved.</p>
+	</div>
+</body>
+</html>
